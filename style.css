@@ -33,7 +33,30 @@ h2 {
     border-radius: 10px;
 }
 
-button {
+button.option {
+    background-color: #fffafa;
+    color: #333;
+    border: 1px solid #ffb6c1;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+}
+
+button.option:hover {
+    background-color: #ffe4e1;
+}
+
+button.option.selected {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #ff1493;
+}
+
+button#next-btn {
     background-color: #ff69b4;
     color: white;
     border: none;
@@ -44,19 +67,11 @@ button {
     font-size: 16px;
 }
 
-button:hover {
+button#next-btn:disabled {
+    background-color: #ffb6c1;
+    cursor: not-allowed;
+}
+
+button#next-btn:hover:not(:disabled) {
     background-color: #ff1493;
-}
-
-.option {
-    background-color: #fffafa;
-    padding: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    border: 1px solid #ffb6c1;
-}
-
-.option:hover {
-    background-color: #ffe4e1;
 }
