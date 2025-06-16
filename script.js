@@ -1,132 +1,131 @@
 const questions = [
     {
-        question: "Phase 1'de misin yoksa Phase 2'ye geçiş yaptın mı?",
-        image: "https://hizliresim.com/n9bktn4",
+        question: "Are you still in Phase 1 or have you transitioned to Phase 2?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q1.jpg",
         options: [
             { text: "Phase 1", score: 5 },
             { text: "Phase 2", score: 15 }
         ]
     },
     {
-        question: "Succinct testnetinde kaç yıldızın var?",
-        image: "https://hizliresim.com/flg1khe",
+        question: "How many stars do you have in the Succinct testnet?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q2.jpg",
         options: [
             { text: "Below 10,000", score: 5 },
             { text: "Above 10,000", score: 15 }
         ]
     },
     {
-        question: "Succinct Discord'unda mesaj sayın kaç?",
-        image: "https://hizliresim.com/amfafxm",
+        question: "How many messages have you sent in the Succinct Discord?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q3.jpg",
         options: [
-            { text: "Below 1000", score: 5 },
-            { text: "Above 1000", score: 15 }
+            { text: "Below 1,000", score: 5 },
+            { text: "Above 1,000", score: 15 }
         ]
     },
     {
-        question: "Succinct hakkında kaç post hazırladın?",
-        image: "https://hizliresim.com/na3dxdn",
+        question: "How many posts have you made about Succinct?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q4.jpg",
         options: [
             { text: "Below 50", score: 5 },
             { text: "Above 50", score: 15 }
         ]
     },
     {
-        question: "Succinct topluluğu katılımcılarına yardımcı oluyor musun?",
-        image: "https://hizliresim.com/c57fobn",
+        question: "Do you help participants in the Succinct community?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q5.jpg",
         options: [
-            { text: "Hayır", score: 5 },
-            { text: "Evet", score: 15 }
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
         ]
     },
     {
-        question: "Succinct testneti başlamadan önce projeden haberdar mıydın?",
-        image: "https://hizliresim.com/5ausad2",
+        question: "Did you know about Succinct before the testnet started?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q6.jpg",
         options: [
-            { text: "Hayır", score: 5 },
-            { text: "Evet", score: 15 }
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
         ]
     },
     {
-        question: "Phase 1'de kaç proof ürettin?",
-        image: "https://hizliresim.com/18s4lwy",
+        question: "How many proofs did you generate in Phase 1?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q7.jpg",
         options: [
             { text: "Below 100", score: 5 },
             { text: "Above 100", score: 15 }
         ]
     },
     {
-        question: "Sfbay'de yayınlanmış bir içeriğin var mı?",
-        image: "https://hizliresim.com/dbl00kt",
+        question: "Do you have published content on Sfbay?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q8.jpg",
         options: [
-            { text: "Hayır", score: 5 },
-            { text: "Evet", score: 15 }
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
         ]
     },
     {
-        question: "Truthlens quizlerini kendin mi cevaplıyorsun?",
-        image: "https://hizliresim.com/7bwne8u",
+        question: "Do you answer Truthlens quizzes yourself?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q9.jpg",
         options: [
-            { text: "Hayır", score: 5 },
-            { text: "Evet", score: 15 }
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
         ]
     },
     {
-        question: "Veristar quizlerinde kopya çekiyor musun?",
-        image: "https://hizliresim.com/lc2c608",
+        question: "Do you cheat on Veristar quizzes?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q10.jpg",
         options: [
-            { text: "Evet", score: 5 },
-            { text: "Hayır", score: 15 }
+            { text: "Yes", score: 5 },
+            { text: "No", score: 15 }
         ]
     }
 ];
 
 const results = [
-    { range: [60, 90], title: "Succinct Beginner", image: "https://hizliresim.com/tkp23k6" },
-    { range: [91, 110], title: "Succinct Prover", image: "https://hizliresim.com/7ukt74v" },
-    { range: [111, 130], title: "Succinct Warrior", image: "https://hizliresim.com/7mfx2ap" },
-    { range: [131, 150], title: "Succinct Legend", image: "https://hizliresim.com/f51d2hp" }
+    { range: [60, 90], title: "Succinct Beginner", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/beg.jpg" },
+    { range: [91, 110], title: "Succinct Prover", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/prov.jpg" },
+    { range: [111, 130], title: "Succinct Warrior", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/war.jpg" },
+    { range: [131, 150], title: "Succinct Legend", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/leg.jpg" }
 ];
 
 let currentQuestion = 0;
-let score = 0;
+let totalScore = 0;
+let selected = null;
 
-function startQuiz() {
-    currentQuestion = 0;
-    score = 0;
-    document.getElementById("quiz").style.display = "block";
-    document.getElementById("result").style.display = "none";
-    showQuestion();
-}
+function loadQuestion() {
+    const q = questions[currentQuestion];
+    document.getElementById("question").textContent = q.question;
+    document.getElementById("question-image").src = q.image;
 
-function showQuestion() {
-    const questionElement = document.getElementById("question");
-    const optionsElement = document.getElementById("options");
-    const questionImage = document.getElementById("question-image");
-    const current = questions[currentQuestion];
-
-    questionElement.innerText = current.question;
-    questionImage.src = current.image;
-    optionsElement.innerHTML = "";
-
-    current.options.forEach((option) => {
-        const button = document.createElement("div");
-        button.className = "option";
-        button.innerText = option.text;
-        button.onclick = () => selectOption(option.score);
-        optionsElement.appendChild(button);
+    const buttons = document.querySelectorAll(".option");
+    buttons.forEach((btn, i) => {
+        btn.textContent = q.options[i].text;
+        btn.classList.remove("selected");
     });
+
+    document.getElementById("next-btn").disabled = true;
+    selected = null;
 }
 
-function selectOption(optionScore) {
-    score += optionScore;
-    nextQuestion();
+function selectOption(index) {
+    const q = questions[currentQuestion];
+    selected = q.options[index].score;
+
+    document.querySelectorAll(".option").forEach((btn, i) => {
+        btn.classList.toggle("selected", i === index);
+    });
+
+    document.getElementById("next-btn").disabled = false;
 }
 
 function nextQuestion() {
+    if (selected === null) return;
+
+    totalScore += selected;
     currentQuestion++;
+
     if (currentQuestion < questions.length) {
-        showQuestion();
+        loadQuestion();
     } else {
         showResult();
     }
@@ -135,23 +134,28 @@ function nextQuestion() {
 function showResult() {
     document.getElementById("quiz").style.display = "none";
     document.getElementById("result").style.display = "block";
-    const resultText = document.getElementById("result-text");
-    const resultImage = document.getElementById("result-image");
 
-    const result = results.find(r => score >= r.range[0] && score <= r.range[1]);
-    resultText.innerText = `Sen bir ${result.title}!`;
-    resultImage.src = result.image;
-}
+    const result = results.find(r => totalScore >= r.range[0] && totalScore <= r.range[1]);
 
-function shareResult() {
-    const result = results.find(r => score >= r.range[0] && score <= r.range[1]);
-    const tweetText = `Succinct Personality Quiz sonucum: ${result.title}! Sen de test et! #SuccinctPersonality`;
-    const tweetUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(tweetText)}`;
-    window.open(tweetUrl, '_blank');
+    document.getElementById("result-text").textContent = result.title;
+    document.getElementById("result-image").src = result.image;
 }
 
 function restartQuiz() {
-    startQuiz();
+    currentQuestion = 0;
+    totalScore = 0;
+    selected = null;
+    document.getElementById("result").style.display = "none";
+    document.getElementById("quiz").style.display = "block";
+    loadQuestion();
 }
 
-startQuiz();
+function shareResult() {
+    const text = `I just got "${document.getElementById("result-text").textContent}" on the Succinct Personality Quiz! 🧠 zk vibes only 👇`;
+    const url = encodeURIComponent(window.location.href);
+    const tweet = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${url}`;
+    window.open(tweet, "_blank");
+}
+
+// Start the quiz
+window.onload = loadQuestion;
