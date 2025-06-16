@@ -10,7 +10,7 @@ body {
 
 .container {
     background: #fff0f5;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -20,17 +20,25 @@ body {
 
 h1 {
     color: #c71585;
+    margin-bottom: 20px;
 }
 
 h2 {
     color: #db7093;
+    margin-top: 15px;
 }
 
 #question-image, #result-image {
     max-width: 100%;
     height: auto;
-    margin: 10px 0;
+    margin: 15px 0;
     border-radius: 10px;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 button.option {
@@ -38,12 +46,11 @@ button.option {
     color: #333;
     border: 1px solid #ffb6c1;
     padding: 15px;
-    margin: 10px;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 100%;
-    text-align: left;
     font-size: 16px;
+    text-align: left;
+    transition: background-color 0.3s;
 }
 
 button.option:hover {
@@ -56,22 +63,35 @@ button.option.selected {
     border-color: #ff1493;
 }
 
-button#next-btn {
+#next-btn, #share-btn, #result button {
     background-color: #ff69b4;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 10px;
+    margin-top: 15px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
-button#next-btn:disabled {
+#next-btn:disabled {
     background-color: #ffb6c1;
     cursor: not-allowed;
 }
 
-button#next-btn:hover:not(:disabled) {
+#next-btn:hover:not(:disabled),
+#share-btn:hover,
+#result button:hover {
     background-color: #ff1493;
+}
+
+#result-text {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #fffafa;
+    padding: 15px;
+    border: 2px dashed #ff69b4;
+    border-radius: 10px;
+    display: inline-block;
 }
