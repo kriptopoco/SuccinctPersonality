@@ -14,49 +14,60 @@ body {
     border-radius: 20px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     text-align: center;
-    max-width: 600px;
+    max-width: 500px;
     width: 90%;
 }
 
 h1, h2 {
     color: #c2185b;
+    font-weight: 600;
+}
+
+.question-frame, .result-frame {
+    border: 2px solid #e91e63;
+    border-radius: 15px;
+    padding: 15px;
+    background: #fff;
+    margin-bottom: 20px;
 }
 
 #question-image, #result-image {
     max-width: 100%;
-    height: auto;
-    max-height: 300px;
-    margin: 20px 0;
-    border-radius: 12px;
-    object-fit: contain;
+    height: 150px; /* Daha küçük boyut */
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
 }
 
 #options {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     margin: 20px 0;
 }
 
 button.option {
-    padding: 18px;
+    padding: 15px;
     background-color: #f8bbd0;
     color: #4a148c;
-    border: 2px solid transparent;
-    border-radius: 12px;
-    font-size: 18px;
+    border: 2px solid #e91e63;
+    border-radius: 25px; /* Daha yuvarlak ve şık */
+    font-size: 16px;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: left;
+    padding-left: 20px;
 }
 
 button.option:hover {
-    background-color: #f48fb1;
+    background-color: #f06292;
+    color: #fff;
 }
 
 button.option.selected {
-    background-color: #c2185b;
-    color: white;
-    border: 2px solid #880e4f;
+    background-color: #ad1457;
+    color: #fff;
+    border-color: #880e4f;
 }
 
 #next-btn, #start-btn {
@@ -65,12 +76,35 @@ button.option.selected {
     border: none;
     padding: 12px 24px;
     font-size: 16px;
-    border-radius: 8px;
+    border-radius: 25px;
     cursor: pointer;
     margin-top: 15px;
+    width: 100%;
 }
 
 #next-btn:disabled {
     background-color: #f48fb1;
     cursor: not-allowed;
+}
+
+button {
+    outline: none;
+}
+
+button:focus {
+    box-shadow: 0 0 5px #e91e63;
+}
+
+/* Mobil uyumluluk */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+    #question-image, #result-image {
+        height: 120px;
+    }
+    button.option {
+        font-size: 14px;
+        padding: 12px;
+    }
 }
