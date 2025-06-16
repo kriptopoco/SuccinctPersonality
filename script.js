@@ -1,5 +1,91 @@
-const questions = [ /* senin yukarıda verdiğin questions dizisi aynı şekilde buraya gelecek */ ];
-const results = [ /* yine yukarıda verdiğin results dizisi buraya gelecek */ ];
+const questions = [ 
+{
+        question: "Are you still in Phase 1 or have you transitioned to Phase 2?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q1.jpg",
+        options: [
+            { text: "Phase 1", score: 5 },
+            { text: "Phase 2", score: 15 }
+        ]
+    },
+    {
+        question: "How many stars do you have in the Succinct testnet?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q2.jpg",
+        options: [
+            { text: "Below 10,000", score: 5 },
+            { text: "Above 10,000", score: 15 }
+        ]
+    },
+    {
+        question: "How many messages have you sent in the Succinct Discord?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q3.jpg",
+        options: [
+            { text: "Below 1,000", score: 5 },
+            { text: "Above 1,000", score: 15 }
+        ]
+    },
+    {
+        question: "How many posts have you made about Succinct?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q4.jpg",
+        options: [
+            { text: "Below 50", score: 5 },
+            { text: "Above 50", score: 15 }
+        ]
+    },
+    {
+        question: "Do you help participants in the Succinct community?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q5.jpg",
+        options: [
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
+        ]
+    },
+    {
+        question: "Did you know about Succinct before the testnet started?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q6.jpg",
+        options: [
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
+        ]
+    },
+    {
+        question: "How many proofs did you generate in Phase 1?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q7.jpg",
+        options: [
+            { text: "Below 100", score: 5 },
+            { text: "Above 100", score: 15 }
+        ]
+    },
+    {
+        question: "Do you have published content on Sfbay?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q8.jpg",
+        options: [
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
+        ]
+    },
+    {
+        question: "Do you answer Truthlens quizzes yourself?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q9.jpg",
+        options: [
+            { text: "No", score: 5 },
+            { text: "Yes", score: 15 }
+        ]
+    },
+    {
+        question: "Do you cheat on Veristar quizzes?",
+        image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/q10.jpg",
+        options: [
+            { text: "Yes", score: 5 },
+            { text: "No", score: 15 }
+        ]
+    }
+ ];
+const results = [
+    { range: [60, 90], title: "Succinct Beginner", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/beg.jpg" },
+    { range: [91, 110], title: "Succinct Prover", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/prov.jpg" },
+    { range: [111, 130], title: "Succinct Warrior", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/war.jpg" },
+    { range: [131, 150], title: "Succinct Legend", image: "https://raw.githubusercontent.com/kriptopoco/succinctimages/main/images/leg.jpg" } 
+];
 
 let currentQuestionIndex = 0;
 let totalScore = 0;
